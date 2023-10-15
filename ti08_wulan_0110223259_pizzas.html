@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <h2>Black Goose Bistro | Pizza-On-Demand</h2>
+    <h3>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</h3>
+    <h4>Your Information</h4>
+    <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+    <fieldset>
+        <label for="name">Name :</label>
+        <input type="text" name="customername" placeholder="enter ur name">
+        <br>
+        <label for="address"> Address :</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea> <br>
+        <label for="telephone">Telephone Number :</label>
+        <input type="number" name="telephone"> <br>
+        <label for="email"> Email :</label> 
+        <input type="email" name="email"> <br>
+        Delivery Instructions :
+        <textarea name="instructions" id="instructions" cols="30" rows="5" maxlength="400"></textarea>
+    </fieldset>
+    <fieldset>
+    <legend><h4>Design Your Dream Pizza:</h4> </legend>
+        <h5>Pizza specs</h5>
+        <br>
+        <label for="crust"> Crust (Choose one) :</label> <br>
+        <input type="radio" name="crust" value="Classic White">
+        <label for="crust"> Classic White</label> <br>
+        <input type="radio" name="crust" value="Multigrain">
+        <label for="crust"> Multigrain</label> <br>
+        <input type="radio" name="crust" value="Cheese-stuffed crust">
+        <label for="crust"> Cheese-stuffed crust</label> <br>
+        <input type="radio" name="crust" value="Gluten-free">
+        <label for="crust"> Gluten-free</label> <br>
+    </fieldset>
+    <fieldset>
+<legend><h5>Toppings (choose as many as you want) :</h5></legend>
+<input type="checkbox" name="toppings[]" value="red sauce" checked> red sauce <br>
+<input type="checkbox" name="toppings[]" value="white sauce"> white sauce <br>
+<input type="checkbox" name="toppings[]" value="Mozzarella Cheese"> mozzarella cheese <br>
+<input type="checkbox" name="toppings[]" value="Pepproni"> pepproni <br>
+<input type="checkbox" name="toppings[]" value="Mushrooms"> mushrooms <br>
+<input type="checkbox" name="toppings[]" value="Peppers"> peppers <br>
+<input type="checkbox" name="toppings[]" value="Anchovies"> anchovies <br>
+</fieldset>
+
+    <fieldset>
+    <legend><h5>Number</h5></legend>
+    <input type="number" list="pizzas" name="pizzas">
+    <datalist id="pizzas">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    </datalist>  
+     <br>
+     <br>
+    <input type="submit" value="Bring me a pizza!">
+    <input type="reset">
+</fieldset>
+    </form>
+</body>
+</html>
