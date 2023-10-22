@@ -1,0 +1,49 @@
+<head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+    </head>
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="video">
+                <video width=”320” height="240" controls>
+                    <source src="akuuu.mp4" type="video/mp4">   
+                </video>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <img width="100" height="auto" src="aku1.jpeg" alt=""> 
+                <img width="100" height="auto" src="aku2.jpeg" alt=""> <br>
+                <img width="100" height="auto" src="aku3.jpeg" alt=""> 
+                <img width="100" height="auto" src="aku4.jpeg" alt=""> 
+            </div>
+        </div>
+        <div class="column">
+            <ul>
+               <li><a href="https://youtu.be/tgVYh94QH8k?si=7vFrTHPCZI6GK4RA">taylor swift - Lover </a></li>
+                <li><a href="https://youtu.be/tgVYh94QH8k?si=Pvy5gFUlLGXCSY1O">taylor swift - Fearless </a></li>
+                <li><a href="https://youtu.be/K1WhMY_ulLA?si=4ip4FwgYqqA6GEsl">taylor swift - Style </a></li>
+                <li><a href="https://youtu.be/QkipiSN0bTg?si=HKHIGdIqcZFPpFaZ">taylor swift - You Belong With Me </a></li>
+            </ul>
+        </div>
+    </div>
+</body>
