@@ -1,0 +1,43 @@
+/* selector element digunakan untuk merujuk pada element html berdasarkan element itu*/
+body{
+    background-color: cornsilk;
+}
+/* selector id digunakan untuk merujuk pada element html berdasarkan atribut id */
+#header{
+    background-color: #deb887;
+    text-align: center;
+    /* padding penulisan tunggal */
+    padding: 5px;
+}
+
+#header h1{
+    color: blue;
+}
+#header blockquote{
+    background-color: goldenrod;
+    border: 2px dotted;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.menu a{
+    text-decoration: none;
+    color: blue;
+}
+.gambar{
+    text-align: center;
+}
+.fp::first-letter{
+    color: blue;
+    font-size: 70px;
+}
+.koleksi{
+    text-align: center;
+}
+.koleksi img{
+    width: 20%;
+}
