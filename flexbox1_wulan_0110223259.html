@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.1 Implementasi Layout Flexbox</title>
+    <style>
+    body{
+    margin: 0;
+    padding: 0;
+    }
+
+    nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 10px;
+    }
+
+    nav ul{
+    list-style: none;
+    display: flex;
+    }
+
+    nav ul li{
+    margin: 0 1rem;
+    }
+    
+    .logo{
+    width: 5rem;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/logonf.png" alt="ini logo nf" class="logo">
+        <ul>
+            <li>about</li>
+            <li>blog</li>
+            <li>shop</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <h2>Program Studi STTNF :</h2>
+    <ol>
+        <li>sistem informasi</li>
+        <li>teknik informatika</li>
+        <li>bisnis digital</li>
+    </ol>
+</body>
+</html>

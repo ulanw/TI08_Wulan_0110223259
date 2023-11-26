@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: pink;
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            background-color: cadetblue;
+            text-align: center;
+            height: 15vh;
+            margin: 15px 35px;
+            line-height: 15vh;
+        }
+        .kotak{
+            display: flex;
+        }
+        .aside{
+            background-color: darkcyan;
+            text-align: center;
+            width: 25%;
+            height: 75vh;
+            margin: 15px 25px;
+            line-height: 75vh;
+            
+        }
+        .article{
+            background-color: indianred;
+            flex-direction: column;
+            margin: 15px 25px;
+            width: 90%;
+            display: flex;
+        }
+        .teks{
+            text-align: center;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .foto{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+        .img{
+            background-color: azure;
+            text-align: center;
+            height: 150px;
+            width: 22%;
+            gap: 5rem;
+            margin-bottom: 25px;
+            line-height: 130px;
+        }
+        .footer{
+            background-color: cadetblue;
+            text-align: center;
+            height: 15vh;
+            margin: 15px 25px;
+            line-height: 15vh;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header"> header</div>
+        <div class="kotak">
+            <div class="aside"> aside </div>
+            <div class="article">
+                <div class="teks">article</div>
+                <div class="foto">
+                    <div class="img">images</div>
+                    <div class="img">images</div>
+                    <div class="img">images</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
