@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman administrasi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+ 
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="dropdown">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+    </svg>
+    <a class="btn btn-secondary dropdown-toggle" href="kegiatan.html" role="button" data-toggle="dropdown" aria-expanded="false" margin="20px" cellpadding="20px">
+      Kegiatan
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="kegiatan.html">Action</a>
+      <a class="dropdown-item" href="kegiatan.html">Another action</a>
+      <a class="dropdown-item" href="kegiatan.html">Something else here</a>
+    </div>
+    <a class="btn btn-secondary dropdown-toggle" href="peserta1.html" role="button" data-toggle="dropdown" aria-expanded="false">
+      Peserta
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="kegiatan.html">Action</a>
+      <a class="dropdown-item" href="kegiatan.html">Another action</a>
+      <a class="dropdown-item" href="kegiatan.html">Something else here</a>
+     </div>
+  </div>
+  </nav>
+<br>
+
+
+<div class="row"> 
+  <div class="col-md-12"> 
+    <h5 class="w-full p-2 mb-2 bg-dark text-white">Filters</h5> 
+    <div class="container"> 
+      <div class="col-md-12"> 
+        <div class="row"> 
+          <div class="col-md-6"> 
+            <p>Tanggal Daftar</p> 
+            <input type="text" value="From" /> 
+            <input type="date" class="ml-5 mt-2 mb-2" /> 
+            <br /> 
+            <input type="text" value="To" /> 
+            <input type="date" class="ml-5 mt-2" /> 
+          </div> 
+          <div class="col-md-6"> 
+            <div class="row"> 
+              <div class="col-md-6"> 
+                <p class="mt-2">Kategori Peserta</p> 
+                <select id="select" name="select" class="custom-select"> 
+                  <option value="Mahasiswa">Mahasiswa</option> 
+                  <option value="Wirausaha">Wirausaha</option> 
+                  <option value="Orang tua">Orang tua</option> 
+                </select> 
+              </div> 
+              <div class="col-md-6"> 
+                <p class="mt-2">Status Peserta</p> 
+                <select id="select" name="select" class="custom-select"> 
+                  <option value="Booking">Booking</option> 
+                  <option value="Order">Order</option> 
+                </select> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+</body>
+</html>
