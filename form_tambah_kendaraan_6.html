@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peminjaman Kendaraan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <style>
+    .navad1{
+      display: flex;
+      list-style-type: none;
+      float: left;
+    }
+    .navad li {
+      margin-right: 20px;
+    }
+
+    /* ini bagian nav-bar */
+    .breadcrumb {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-inline {
+      margin-left: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <h1 align="center">eCarRental <span> - Admin</span></h1>
+    <!-- Bagian Nav-bar -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="landing_rentalcar_1.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="detail_kendaraan_3.html">Produk & layanan</a></li>
+        <li class="breadcrumb-item"><a href="form_booking_4.html">Booking</a></li>
+        <li class="breadcrumb-item"><a href="admin_daftar_kendaraan_5.html">Admin</a></li>
+        <li class="breadcrumb-item"><a href="tentang_kami_2.html">Tentang Kami</a></li>
+
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+      </ol>
+    </nav>
+    <br>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<fieldset>
+    <legend align="center">Kelola Kendaraan</legend>       
+        <form style="margin-left: 300px;">
+        <div class="form-group row">
+            <label for="text1" class="col-3 col-form-label">Nama Kendaraan</label> 
+            <div class="col-8">
+            <input id="text1" name="text1" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="select" class="col-3 col-form-label">Kategori</label> 
+            <div class="col-2">
+            <select id="select" name="select" class="custom-select">
+                <option value="rabbit">Bus wisata</option>
+                <option value="duck">Cikinoy</option>
+                <option value="fish">Gondeng</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="textarea" class="col-3 col-form-label">Deskripsi Kendaraan</label> 
+            <div class="col-8">
+            <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-3">Fasilitas Kendaraan</label> 
+            <div class="col-6">
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="checkbox" id="checkbox_0" type="checkbox" checked="checked" class="custom-control-input" value="rabbit"> 
+                <label for="checkbox_0" class="custom-control-label">Sound System</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="duck" checked="checked"> 
+                <label for="checkbox_1" class="custom-control-label">Wifi</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="fish" checked="checked"> 
+                <label for="checkbox_2" class="custom-control-label">TV</label>
+            </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text" class="col-3 col-form-label">Kapasitas</label> 
+            <div class="col-2">
+            <input id="text" name="text" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text2" class="col-3 col-form-label">Merek Kendaraan</label> 
+            <div class="col-4">
+            <input id="text2" name="text2" type="text" class="form-control">
+            </div>
+        </div> 
+        <div class="form-group row" style="display:flex;">
+            <div >
+            <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+            <div >
+                <button name="submit" type="submit" class="btn btn-primary" style="margin-left:200px;">Reset</button>
+            </div>
+        </div>
+        </form>
+</fieldset>      
+    
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4" style="margin-top: 120px;">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+    
+      <span class="brand-text font-weight-light">eRuang  -Backend </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="./gambar ahmad admin.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Ahmad Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Kendaraan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="admin_daftar_peminjam_7.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Peminjaman</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Transaksi</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+              <i class="nav-icon "></i>
+              <p>
+                Logout
+                
+              </p>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+</body>
+  <br>
+  <br>
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
